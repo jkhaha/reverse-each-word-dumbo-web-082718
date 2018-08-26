@@ -8,12 +8,10 @@ def reverse_each_word(sentence)
 end
 
 def reverse_each_word(sentence)
-  string = sentence.split("")
-  reversed_sentence = []
-  string.collect do |word|
-    reversed_sentence << word.reverse
-  end
-  return reversed_sentence.join(" ")
+  string = sentence.split("").collect do |word|
+    word.reverse 
+  end 
+  reversed.join(" ")
 end
 
 
